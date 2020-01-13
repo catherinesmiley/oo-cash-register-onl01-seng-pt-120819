@@ -21,7 +21,7 @@ class CashRegister
     else 
       @items << item 
     end
-    
+    @last_transaction = self.total
   end
   
   def apply_discount
