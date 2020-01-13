@@ -11,6 +11,7 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
+    @last_transaction = price
     self.total += price * quantity
     if quantity > 1 
       i = 0 
