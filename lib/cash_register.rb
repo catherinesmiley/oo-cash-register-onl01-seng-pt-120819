@@ -13,6 +13,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     self.total += price * quantity
     @last_transaction = self.total
+    binding.pry
     if quantity > 1 
       i = 0 
       while i < quantity 
